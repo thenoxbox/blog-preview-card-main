@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Figtree:ital,wght@0,300..900;1,300..900&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Figtree:ital,wght@0,800;1,800&display=swap" rel="stylesheet">
+  <title>Frontend Mentor | Blog preview card</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    body{
+      font-family: "Figtree", sans-serif;
+      background-color: hsl(47, 88%, 63%);
+    }
+    .flexthymuscles{ 
+      display: flex; 
+      flex-direction: column; 
+    }
+    .thegridone{
+      display: grid;
+      gap: 40px;
+      grid-template-columns: auto; 
+      grid-template-rows: 221px auto 221px;
+    }
+    .theplace{
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+
+    }
+    .thebox{
+      display: grid;
+      grid-template-columns: auto;
+      grid-template-rows: auto auto;
+      /* height: 522px;
+      width: 384px; */
+      background-color: white;
+      border-radius: 20px;
+      border: 1px solid #000;
+      box-shadow: 6px 6px 1px rgba(0, 0, 0, 0.9);
+      transition: box-shadow 0.3s;
+    }
+    .thebox:hover{
+      cursor: pointer;
+      box-shadow: 14px 14px 1px rgba(0, 0, 0, 0.9);
+    }
+    .imageprime{
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+    }
+    .imageprime img{
+      margin: 24px;
+      height: 200px;
+      width: 336px;
+      border-radius: 20px;
+    }
+    .beholder{
+      padding: 24px;
+    }
+    button {
+    background: none;
+    border: none;
+    outline: none;
+    box-shadow: none;
+    }
+    .minion{
+      padding-left: 12px;
+      padding-right: 12px;
+      padding-top: 4px;
+      padding-bottom: 4px;
+      font-family: "Figtree", sans-serif;
+      background-color: hsl(47, 88%, 63%);
+      border-radius: 4px;
+      font-weight: 800;
+      font-size: 16px;
+    }
+    .textbox h3{
+      font-size: 16px;
+    }
+    .textbox h2{
+      color: #000;
+    }
+    .textbox h2:hover{
+      color: hsl(47, 88%, 63%);
+    }
+    .textbox p{
+      color: grey;
+      font-size: 16px;
+    }
+    .last{
+      gap: 10px;
+      display: flex;
+      flex-direction: row;
+    }
+    .last img{
+      height: 42px;
+      width: 42px;
+    }
+    .yam h3{
+      font-weight: 900;
+      font-size: 13px;
+    }
+    .attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }
+    
+    @media (max-width:400px) {
+      .imageprime img { margin: 22px; height: 190px; width: 303px; border-radius: 20px; }
+      .thebox { margin: 10px;}
+    }
+  </style>
+</head>
+<body>
+ <div class="flexthymuscles">
+    <div class="thegridone">
+      <div></div>
+      <div class="theplace">
+        <div class="thebox">
+          <div class="imageprime">
+            <img src="/assets/images/illustration-article.svg" alt="">
+          </div>
+          <div class="beholder">
+            <div class="textbox">
+              <button class="minion">Learning</button>
+              <h3>Published 21 Dec 2023</h3>
+              <h2>HTML & CSS foundations</h2>
+              <p> These languages are the backbone of every <br>website, defining structure, content, and <br> presentation.</p>
+              <div class="last">
+                <img src="/assets/images/image-avatar.webp" alt="">
+                <div class="yam" style="height: 32px;"><h3>Greg Hooper</h3></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div></div>
+    </div>
+</div>
+
+
+<!-- 
+  Learning
+  Published 21 Dec 2023
+  HTML & CSS foundations
+  These languages are the backbone of every website, defining structure, content, and presentation.
+  Greg Hooper -->
+  
+  <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="#">Your Name Here</a>.
+  </div>
+</body>
+</html>
